@@ -10,6 +10,34 @@ a {
   font-size: $default-font-size;
 }
 
+p span {
+  font-weight: bold;
+}
+
+#header .container {
+  text-align: right;
+}
+
+.container a span {
+  color: white;
+  font-size: 2rem;
+  padding: 5px;
+  margin: 40px 8px 0;
+  display: inline-block;
+  transition: font-weight 0.2s;
+}
+
+.container a span:hover {
+  font-weight: bold;
+}
+
+@media (max-width: 400px) {
+  .container a span {
+    font-size: 1.5rem;
+    margin: 20px 4px 10px;
+  }
+}
+
 a,
 a:link,
 a:hover,
